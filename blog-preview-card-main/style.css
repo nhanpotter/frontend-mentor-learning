@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100, 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.5;
+}
+
+.card {
+    max-width: 327px;
+    padding: 24px 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+
+    background-color: white;
+
+    border: 1px solid hsl(0, 0%, 7%);
+    border-radius: 20px;
+
+    box-shadow: 8px 8px 0px 0px hsl(0, 0%, 7%);
+}
+
+@media (min-width: 768px) {
+    .card {
+        max-width: 384px;
+    }
+}
+
+.card-image-cover {
+    border-radius: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.card-tag {
+    padding: 4px 12px;
+
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 4px;
+
+    font-weight: 800;
+    font-size: 12px;
+    color: hsl(0, 0%, 7%);
+}
+
+@media (min-width: 768px) {
+    .card-tag {
+        font-size: 14px;
+    }
+}
+
+.card-time {
+    font-weight: 500;
+    font-size: 12px;
+    color: hsl(0, 0%, 7%);
+}
+
+@media (min-width: 768px) {
+    .card-time {
+        font-size: 14px;
+    }
+}
+
+.card-title {
+    font-weight: 800;
+    font-size: 20px;
+    color: hsl(0, 0%, 7%);
+}
+
+.card-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-title a:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+@media (min-width: 768px) {
+    .card-title {
+        font-size: 24px;
+    }
+}
+
+.card-description {
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(0, 0%, 42%);
+}
+
+@media (min-width: 768px) {
+    .card-description {
+        font-size: 16px;
+    }
+}
+
+.card-author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-image-author {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-author-name {
+    font-weight: 800;
+    font-size: 14px;
+    color: hsl(0, 0%, 7%);
+}
